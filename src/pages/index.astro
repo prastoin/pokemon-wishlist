@@ -1,0 +1,26 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { HUGO_WHISHLIST } from "../../hugo";
+import EditionSection from "../components/EditionSection.astro";
+import {
+  EditionLiteral,
+  parseRawPokemonCardCollection,
+  PokemonCardCollection,
+} from "../../type";
+
+const whishlistEntries = Object.entries(HUGO_WHISHLIST) as [
+  EditionLiteral,
+  PokemonCardCollection
+][];
+---
+
+<Layout title="Welcome to Astro.">
+  {
+    whishlistEntries.map(([edition, cardCollection]) => (
+      <EditionSection
+        cardCollection={parseRawPokemonCardCollection(cardCollection, edition)}
+        edition={edition}
+      />
+    ))
+  }
+</Layout>

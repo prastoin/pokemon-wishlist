@@ -1,0 +1,32 @@
+---
+import type { ParsedPokemonCard } from "../../type";
+import { Picture } from "@astrojs/image/components";
+
+export interface Props {
+  cardInformation: ParsedPokemonCard;
+}
+
+const { name, edition, galleryUrl, imageUrl } = Astro.props.cardInformation;
+---
+
+<li class="flex-column center md:mt-3 md:mr-9 w-100">
+  <a href={galleryUrl}>
+    <Picture
+      aspectRatio="444:620"
+      widths={[700]}
+      src={imageUrl}
+      alt={`${name}'s image`}
+      format="jpeg"
+    />
+    <h2>
+      {name}
+      <span>&rarr;</span>
+    </h2>
+  </a>
+  <a
+    href={`/${edition}`}
+    class="mt-1 mr-2.5 bg-gray-50 border border-gray-300 text-gray-900 rounded-lg p-1.5 dark:bg-gray-700 dark:border-gray-600 dark:text-white"
+  >
+    {edition}
+  </a>
+</li>

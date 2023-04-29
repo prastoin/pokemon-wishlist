@@ -1,0 +1,39 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { HUGO_WHISHLIST } from "../../hugo";
+import {
+  editionCollection,
+  EditionLiteral,
+  ParsedPokemonCardCollection,
+  parseRawPokemonCardCollection,
+} from "../../type";
+import EditionSection from "../components/EditionSection.astro";
+
+interface Props {
+  cardCollection: ParsedPokemonCardCollection;
+  edition: EditionLiteral;
+}
+
+export function getStaticPaths() {
+  return editionCollection.map((edition) => {
+    const cardCollection = HUGO_WHISHLIST[edition];
+    if (cardCollection === undefined) {
+      throw new Error("Encountered unknown edition, should never occurs");
+    }
+
+    return {
+      params: { edition },
+      props: {
+        cardCollection: parseRawPokemonCardCollection(cardCollection, edition),
+        edition,
+      },
+    };
+  });
+}
+
+const { cardCollection, edition } = Astro.props;
+---
+
+<Layout title="Welcome to Astro.">
+  <EditionSection cardCollection={cardCollection} edition={edition} />
+</Layout>
