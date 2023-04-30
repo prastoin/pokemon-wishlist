@@ -297,61 +297,85 @@ export const PAUL_WISTLIST: EditionRecord = {
       holo: false,
       name: "RAMOLOS",
       serialNumber: 4,
+      directImageLink:
+        "https://www.pokecardex.com/assets/images/sets_jp/UPC/HD/6.jpg",
     },
     {
-      holo: false,
+      holo: true,
       name: "RONFLEX",
       serialNumber: 27,
+      directImageLink:
+        "https://www.pokecardex.com/assets/images/sets_jp/UPC/HD/29.jpg",
     },
     {
       holo: false,
       name: "OSSATUEUR",
       serialNumber: 38,
+      directImageLink:
+        "https://www.pokecardex.com/assets/images/sets_jp/UPC/HD/40.jpg",
     },
     {
-      holo: false,
+      holo: true,
       name: "KANGOUREX",
       serialNumber: 41,
+      directImageLink:
+        "https://www.pokecardex.com/assets/images/sets_jp/UPC/HD/43.jpg",
     },
     {
-      holo: false,
+      holo: true,
       name: "DRACOLOSSE",
       serialNumber: 57,
+      directImageLink:
+        "https://www.pokecardex.com/assets/images/sets_jp/UPC/HD/60.jpg",
     },
     {
-      holo: false,
+      holo: true,
       name: "ALAKAZAM",
       serialNumber: 78,
+      directImageLink:
+        "https://www.pokecardex.com/assets/images/sets_jp/UPC/HD/82.jpg",
     },
     {
-      holo: false,
+      holo: true,
       name: "AMONISTAR",
       serialNumber: 77,
+      directImageLink:
+        "https://www.pokecardex.com/assets/images/sets_jp/UPC/HD/81.jpg",
     },
     {
-      holo: false,
+      holo: true,
       name: "GROLEM",
       serialNumber: 80,
+      directImageLink:
+        "https://www.pokecardex.com/assets/images/sets_jp/UPC/HD/84.jpg",
     },
     {
-      holo: false,
-      name: "MACHOPEUR",
+      holo: true,
+      name: "MACKOGNEUR",
       serialNumber: 81,
+      directImageLink:
+        "https://www.pokecardex.com/assets/images/sets_jp/UPC/HD/85.jpg",
     },
     {
       holo: false,
       name: "NIDOKING",
       serialNumber: 96,
+      directImageLink:
+        "https://www.pokecardex.com/assets/images/sets_jp/UPC/HD/110.jpg",
     },
     {
       holo: false,
       name: "AXOLOT",
       serialNumber: 122,
+      directImageLink:
+        "https://www.pokecardex.com/assets/images/sets_jp/UPC/HD/136.jpg",
     },
     {
       holo: false,
       name: "TOURNEGRAIN FT PIAFABEC",
       serialNumber: 165,
+      directImageLink:
+        "https://www.pokecardex.com/assets/images/sets_jp/UPC/HD/194.jpg",
     },
   ],
   VM3: [

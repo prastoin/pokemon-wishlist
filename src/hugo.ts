@@ -121,29 +121,25 @@ export const HUGO_WHISHLIST: EditionRecord = {
   PRT: [],
   UPC: [
     {
-      holo: true,
-      name: "MEW",
-      serialNumber: 3,
-    },
-    {
-      holo: true,
+      holo: false,
       name: "NOADKOKO",
       serialNumber: 103,
+      directImageLink:
+        "https://www.pokecardex.com/assets/images/sets_jp/UPC/HD/117.jpg",
     },
     {
-      holo: true,
+      holo: false,
       name: "PSYKO",
       serialNumber: 104,
-    },
-    {
-      holo: true,
-      name: "PYSKO",
-      serialNumber: 107,
+      directImageLink:
+        "https://www.pokecardex.com/assets/images/sets_jp/UPC/HD/118.jpg",
     },
     {
       holo: true,
       name: "MEWTWO",
       serialNumber: 183,
+      directImageLink:
+        "https://www.pokecardex.com/assets/images/sets_jp/UPC/HD/215.jpg",
     },
   ],
   VM3: [],

@@ -1,12 +1,14 @@
 ---
-import type { ParsedPokemonCard } from "../../type";
+import type { ParsedPokemonCard } from "../type";
 import { Picture } from "@astrojs/image/components";
 
 export interface Props {
   cardInformation: ParsedPokemonCard;
 }
 
-const { name, edition, galleryUrl, imageUrl } = Astro.props.cardInformation;
+const { name, edition, galleryUrl, imageUrl, directImageLink } =
+  Astro.props.cardInformation;
+const finalImageUrl = directImageLink || imageUrl;
 ---
 
 <li class="flex-column center md:mt-3 md:mr-9 w-100">
@@ -14,9 +16,10 @@ const { name, edition, galleryUrl, imageUrl } = Astro.props.cardInformation;
     <Picture
       aspectRatio="444:620"
       widths={[700]}
-      src={imageUrl}
+      src={finalImageUrl}
       alt={`${name}'s image`}
       format="jpeg"
+      loading="lazy"
     />
     <h2>
       {name}

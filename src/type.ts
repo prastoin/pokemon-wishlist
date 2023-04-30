@@ -35,7 +35,7 @@ export function parseRawPokemonCardCollection(
 }
 
 export function parseRawPokemonCard({
-  card: { holo, name, serialNumber },
+  card: { holo, name, serialNumber, directImageLink },
   edition,
 }: {
   card: PokemonCard;
@@ -45,7 +45,7 @@ export function parseRawPokemonCard({
     edition,
     serialNumber,
   });
-
+  console.log({ directImageLink });
   return {
     edition,
     galleryUrl,
@@ -53,6 +53,7 @@ export function parseRawPokemonCard({
     imageUrl,
     name,
     serialNumber,
+    directImageLink,
   };
 }
 
@@ -82,6 +83,7 @@ export interface PokemonCard {
   name: string;
   holo: boolean;
   serialNumber: number;
+  directImageLink?: string;
 }
 export type PokemonCardCollection = PokemonCard[];
 export type EditionRecord = Record<EditionLiteral, PokemonCardCollection>;
