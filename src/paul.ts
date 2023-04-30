@@ -64,33 +64,6 @@ export const PAUL_WISTLIST: EditionRecord = {
       serialNumber: 64,
     },
   ],
-  ES4: [
-    {
-      holo: false,
-      name: "ABRA",
-      serialNumber: 40,
-    },
-    {
-      holo: false,
-      name: "ABRACADABRA",
-      serialNumber: 41,
-    },
-    {
-      holo: false,
-      name: "RHINOFEROS",
-      serialNumber: 53,
-    },
-    {
-      holo: true,
-      name: "RHINOCORNE",
-      serialNumber: 55,
-    },
-    {
-      holo: false,
-      name: "TETARTE",
-      serialNumber: 22,
-    },
-  ],
   ES5: [
     {
       holo: false,
@@ -142,11 +115,14 @@ export const PAUL_WISTLIST: EditionRecord = {
     {
       holo: true,
       name: "RAMOLOSS",
+      // Cardmarket
+      mightBeToExpensive: 40,
       serialNumber: 14,
     },
     {
       holo: false,
       name: "ABRA",
+      mightBeToExpensive: 15,
       serialNumber: 13,
     },
   ],
@@ -205,6 +181,16 @@ export const PAUL_WISTLIST: EditionRecord = {
       name: "RHINOFEROS",
       serialNumber: 105,
     },
+    {
+      holo: true,
+      name: "DEMOLOSSE",
+      serialNumber: 24,
+    },
+    {
+      holo: false,
+      name: "TOURNEGRAIN",
+      serialNumber: 3,
+    },
   ],
   OR5: [
     {
@@ -232,6 +218,26 @@ export const PAUL_WISTLIST: EditionRecord = {
       name: "PSYKO",
       serialNumber: 21,
     },
+    {
+      holo: false,
+      name: "RHINOCORNE",
+      serialNumber: 54,
+    },
+    {
+      holo: false,
+      name: "MYSTHERBE",
+      serialNumber: 4,
+    },
+    {
+      holo: false,
+      name: "AKWAKA",
+      serialNumber: 22,
+    },
+    {
+      holo: false,
+      name: "RAPASDEPIC",
+      serialNumber: 59,
+    },
   ],
   OR6: [
     {
@@ -256,11 +262,6 @@ export const PAUL_WISTLIST: EditionRecord = {
     },
     {
       holo: false,
-      name: "RHINOFEROS",
-      serialNumber: 61,
-    },
-    {
-      holo: false,
       name: "KANGOUREX",
       serialNumber: 71,
     },
@@ -274,22 +275,30 @@ export const PAUL_WISTLIST: EditionRecord = {
       name: "ABRA",
       serialNumber: 43,
     },
-  ],
-  PRT: [
     {
       holo: false,
-      name: "RAMOLOSS",
-      serialNumber: 4,
+      name: "RHINOCORNE",
+      serialNumber: 61,
     },
     {
       holo: false,
-      name: "ABRA",
-      serialNumber: 5,
+      name: "MACHOC",
+      serialNumber: 58,
     },
     {
       holo: false,
-      name: "DRACOLOSSE",
-      serialNumber: 18,
+      name: "MACHOPEUR",
+      serialNumber: 59,
+    },
+    {
+      holo: false,
+      name: "MACKOGNEUR",
+      serialNumber: 60,
+    },
+    {
+      holo: false,
+      name: "MACKOGNEUR",
+      serialNumber: 28,
     },
   ],
   UPC: [
@@ -316,45 +325,10 @@ export const PAUL_WISTLIST: EditionRecord = {
     },
     {
       holo: true,
-      name: "KANGOUREX",
-      serialNumber: 41,
-      directImageLink:
-        "https://www.pokecardex.com/assets/images/sets_jp/UPC/HD/43.jpg",
-    },
-    {
-      holo: true,
       name: "DRACOLOSSE",
       serialNumber: 57,
       directImageLink:
         "https://www.pokecardex.com/assets/images/sets_jp/UPC/HD/60.jpg",
-    },
-    {
-      holo: true,
-      name: "ALAKAZAM",
-      serialNumber: 78,
-      directImageLink:
-        "https://www.pokecardex.com/assets/images/sets_jp/UPC/HD/82.jpg",
-    },
-    {
-      holo: true,
-      name: "AMONISTAR",
-      serialNumber: 77,
-      directImageLink:
-        "https://www.pokecardex.com/assets/images/sets_jp/UPC/HD/81.jpg",
-    },
-    {
-      holo: true,
-      name: "GROLEM",
-      serialNumber: 80,
-      directImageLink:
-        "https://www.pokecardex.com/assets/images/sets_jp/UPC/HD/84.jpg",
-    },
-    {
-      holo: true,
-      name: "MACKOGNEUR",
-      serialNumber: 81,
-      directImageLink:
-        "https://www.pokecardex.com/assets/images/sets_jp/UPC/HD/85.jpg",
     },
     {
       holo: false,
@@ -362,20 +336,6 @@ export const PAUL_WISTLIST: EditionRecord = {
       serialNumber: 96,
       directImageLink:
         "https://www.pokecardex.com/assets/images/sets_jp/UPC/HD/110.jpg",
-    },
-    {
-      holo: false,
-      name: "AXOLOT",
-      serialNumber: 122,
-      directImageLink:
-        "https://www.pokecardex.com/assets/images/sets_jp/UPC/HD/136.jpg",
-    },
-    {
-      holo: false,
-      name: "TOURNEGRAIN FT PIAFABEC",
-      serialNumber: 165,
-      directImageLink:
-        "https://www.pokecardex.com/assets/images/sets_jp/UPC/HD/194.jpg",
     },
   ],
   VM3: [
@@ -389,6 +349,46 @@ export const PAUL_WISTLIST: EditionRecord = {
       name: "KANGOUREX",
       serialNumber: 33,
     },
+    {
+      holo: false,
+      name: "KADABRA",
+      serialNumber: 20,
+    },
+    {
+      holo: false,
+      name: "FLAGADOSS",
+      serialNumber: 21,
+    },
+    {
+      holo: false,
+      name: "MACHOPEUR",
+      serialNumber: 28,
+    },
+    {
+      holo: false,
+      name: "OSSELAIT",
+      serialNumber: 30,
+    },
+    {
+      holo: false,
+      name: "RHINOCORNE",
+      serialNumber: 31,
+    },
+    {
+      holo: false,
+      name: "GRAVALANCH",
+      serialNumber: 29,
+    },
+    {
+      holo: false,
+      name: "AMONITA",
+      serialNumber: 18,
+    },
+    {
+      holo: false,
+      name: "AKWAKA",
+      serialNumber: 13,
+    },
   ],
   VS: [
     {
@@ -400,21 +400,6 @@ export const PAUL_WISTLIST: EditionRecord = {
       holo: false,
       name: "EXCELANGUE",
       serialNumber: 17,
-    },
-    {
-      holo: false,
-      name: "FEUNARD",
-      serialNumber: 20,
-    },
-    {
-      holo: false,
-      name: "OSSATUEUR",
-      serialNumber: 23,
-    },
-    {
-      holo: false,
-      name: "STEELYX",
-      serialNumber: 32,
     },
     {
       holo: false,
@@ -433,48 +418,72 @@ export const PAUL_WISTLIST: EditionRecord = {
     },
     {
       holo: false,
-      name: "COCHGNON",
-      serialNumber: 44,
-    },
-    {
-      holo: false,
-      name: "CADOIZO",
-      serialNumber: 45,
-    },
-    {
-      holo: false,
-      name: "MAIRESTE",
-      serialNumber: 58,
-    },
-    {
-      holo: false,
       name: "KABUTOPS",
       serialNumber: 69,
     },
+  ],
+  VM1: [
     {
       holo: false,
-      name: "VOCALROPOD",
-      serialNumber: 71,
+      name: "ABRA",
+      serialNumber: 20,
     },
     {
       holo: false,
-      name: "MACKOGNEUR",
-      serialNumber: 81,
+      name: "chenipan",
+      serialNumber: 2,
     },
     {
       holo: false,
-      name: "STEELYX",
-      serialNumber: 84,
+      name: "nidoran",
+      serialNumber: 6,
+    },
+    {
+      holo: false,
+      name: "nidoran",
+      serialNumber: 7,
+    },
+    {
+      holo: false,
+      name: "ronflex",
+      serialNumber: 34,
+    },
+    {
+      holo: false,
+      name: "ratata",
+      serialNumber: 25,
+    },
+    {
+      holo: false,
+      name: "excelangue",
+      serialNumber: 30,
+    },
+  ],
+  VM2: [
+    {
+      holo: false,
+      name: "LOKLHASS",
+      serialNumber: 10,
+    },
+    {
+      holo: false,
+      name: "MACHOC",
+      serialNumber: 22,
     },
     {
       holo: false,
       name: "PTERA",
-      serialNumber: 99,
+      serialNumber: 29,
     },
     {
       holo: false,
-      name: "DRACOLOSSE",
-      serialNumber: 100,
+      name: "OSSATUEUR",
+      serialNumber: 25,
+    },
+    {
+      holo: false,
+      name: "KABUTO",
+      serialNumber: 28,
     },
   ],
 };

@@ -13,12 +13,12 @@ export const editionCollection = [
   "NEO3",
   "NEO4",
   "VS",
-  "PRT",
   "MCMP",
   "ES2",
   "ES3",
-  "ES4",
   "ES5",
+  "VM1",
+  "VM2",
 ] as const;
 export type EditionLiteral = (typeof editionCollection)[number];
 
@@ -45,7 +45,6 @@ export function parseRawPokemonCard({
     edition,
     serialNumber,
   });
-  console.log({ directImageLink });
   return {
     edition,
     galleryUrl,
@@ -84,6 +83,7 @@ export interface PokemonCard {
   holo: boolean;
   serialNumber: number;
   directImageLink?: string;
+  mightBeToExpensive?: number;
 }
 export type PokemonCardCollection = PokemonCard[];
 export type EditionRecord = Record<EditionLiteral, PokemonCardCollection>;
@@ -92,7 +92,6 @@ function mergeWhishList(): EditionRecord {
   const initialAccumulator: EditionRecord = {
     ES2: [],
     ES3: [],
-    ES4: [],
     ES5: [],
     MCMP: [],
     MCVS5: [],
@@ -101,11 +100,12 @@ function mergeWhishList(): EditionRecord {
     NEO4: [],
     OR5: [],
     OR6: [],
-    PRT: [],
     SOIS: [],
     UPC: [],
     VM3: [],
     VS: [],
+    VM1: [],
+    VM2: [],
   };
   return editionCollection.reduce((accumulator, edition) => {
     return {
