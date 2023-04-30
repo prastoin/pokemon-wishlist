@@ -1,9 +1,11 @@
+import { HUGO_WHISHLIST } from "./hugo";
+import { PAUL_WISTLIST } from "./paul";
+
 export const editionCollection = [
   "VS",
   "MCVS5",
   "SOIS",
   "UPC",
-  "PKF",
   "VM3",
   "OR5",
   "OR6",
@@ -61,6 +63,8 @@ export function getPokecardexUrl({
   edition: EditionLiteral;
   serialNumber: number;
 }): CardPokecardexMetadata {
+  // Not HD
+  // const imageUrl = `https://www.pokecardex.com/assets/images/sets_jp/${edition}/${serialNumber}.jpg`;
   const imageUrl = `https://www.pokecardex.com/assets/images/sets_jp/${edition}/HD/${serialNumber}.jpg`;
   const galleryUrl = `https://www.pokecardex.com/series/jp/${edition}#galery-${serialNumber}`;
 
@@ -81,3 +85,32 @@ export interface PokemonCard {
 }
 export type PokemonCardCollection = PokemonCard[];
 export type EditionRecord = Record<EditionLiteral, PokemonCardCollection>;
+
+function mergeWhishList(): EditionRecord {
+  const initialAccumulator: EditionRecord = {
+    ES2: [],
+    ES3: [],
+    ES4: [],
+    ES5: [],
+    MCMP: [],
+    MCVS5: [],
+    NEO2: [],
+    NEO3: [],
+    NEO4: [],
+    OR5: [],
+    OR6: [],
+    PRT: [],
+    SOIS: [],
+    UPC: [],
+    VM3: [],
+    VS: [],
+  };
+  return editionCollection.reduce((accumulator, edition) => {
+    return {
+      ...accumulator,
+      [edition]: [...HUGO_WHISHLIST[edition], ...PAUL_WISTLIST[edition]],
+    };
+  }, initialAccumulator);
+}
+
+export const ALL_WISHLIST = mergeWhishList();

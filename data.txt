@@ -160,14 +160,14 @@ T Promotional https://www.pokecardex.com/series/jp/PRT
 PAUL =>
 - RAMOLOSS https://www.pokecardex.com/series/jp/PRT#galery-4
 - FLAGADOSs https://www.pokecardex.com/series/jp/PRT#galery-5
-
+- DRACOLOSSE https://www.pokecardex.com/series/jp/PRT#galery-18
 
 ==========================================================
 McDonald's Pokémon-e Minimum Pack https://www.pokecardex.com/series/jp/MCMP
 ==========================================================
 PAUL =>
 - RAMOLOSS https://www.pokecardex.com/series/jp/MCMP#galery-14
-- ABRA https://www.pokecardex.com/series/jp/MCMP#galery-13
+- FLAGADOSS https://www.pokecardex.com/series/jp/MCMP#galery-13
 
 
 ==========================================================
@@ -201,8 +201,6 @@ PAUL =>
 - RHINOFEROS https://www.pokecardex.com/series/jp/ES4#galery-53
 - RHINOCORNE https://www.pokecardex.com/series/jp/ES4#galery-55
 - TETARTE https://www.pokecardex.com/series/jp/ES4#galery-22
-
-
 
 ==========================================================
 Mysterious Mountains https://www.pokecardex.com/series/jp/ES5

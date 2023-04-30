@@ -1,14 +1,14 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import { HUGO_WHISHLIST } from "../../hugo";
 import EditionSection from "../components/EditionSection.astro";
 import {
+  ALL_WISHLIST,
   EditionLiteral,
   parseRawPokemonCardCollection,
   PokemonCardCollection,
-} from "../../type";
+} from "../type";
 
-const whishlistEntries = Object.entries(HUGO_WHISHLIST) as [
+const wishlistEntries = Object.entries(ALL_WISHLIST) as [
   EditionLiteral,
   PokemonCardCollection
 ][];
@@ -16,7 +16,7 @@ const whishlistEntries = Object.entries(HUGO_WHISHLIST) as [
 
 <Layout title="Welcome to Astro.">
   {
-    whishlistEntries.map(([edition, cardCollection]) => (
+    wishlistEntries.map(([edition, cardCollection]) => (
       <EditionSection
         cardCollection={parseRawPokemonCardCollection(cardCollection, edition)}
         edition={edition}
