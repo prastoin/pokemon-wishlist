@@ -3,17 +3,14 @@ import type { EditionRecord } from "./type";
 export const HUGO_WHISHLIST: EditionRecord = {
   SOIS: [
     {
-      holo: false,
       name: "TENTACRUEL",
       serialNumber: 10,
     },
     {
-      holo: false,
       name: "NOADKOKO",
       serialNumber: 13,
     },
     {
-      holo: false,
       name: "ROIGADA ET PSYKO",
       serialNumber: 14,
     },
@@ -40,7 +37,6 @@ export const HUGO_WHISHLIST: EditionRecord = {
   ],
   ES5: [
     {
-      holo: false,
       name: "CANARTICHO",
       serialNumber: 61,
     },
@@ -110,7 +106,6 @@ export const HUGO_WHISHLIST: EditionRecord = {
   VM3: [],
   VS: [
     {
-      holo: false,
       name: "CANARTICHO",
       serialNumber: 3,
     },
@@ -125,7 +120,6 @@ export const HUGO_WHISHLIST: EditionRecord = {
       serialNumber: 43,
     },
     {
-      holo: false,
       name: "ROIGADA",
       serialNumber: 77,
     },

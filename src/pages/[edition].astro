@@ -1,13 +1,13 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import {
+  AllWhistlistInformation,
   editionCollection,
   EditionLiteral,
   ParsedPokemonCardCollection,
   parseRawPokemonCardCollection,
 } from "../type";
 import EditionSection from "../components/EditionSection.astro";
-import { ALL_WISHLIST } from "../type";
 
 interface Props {
   cardCollection: ParsedPokemonCardCollection;
@@ -15,8 +15,9 @@ interface Props {
 }
 
 export function getStaticPaths() {
+  const { allWishlist } = AllWhistlistInformation;
   return editionCollection.map((edition) => {
-    const cardCollection = ALL_WISHLIST[edition];
+    const cardCollection = allWishlist[edition];
     if (cardCollection === undefined) {
       throw new Error("Encountered unknown edition, should never occurs");
     }

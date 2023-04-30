@@ -11,7 +11,7 @@ const { name, edition, galleryUrl, imageUrl, directImageLink } =
 const finalImageUrl = directImageLink || imageUrl;
 ---
 
-<li class="flex-column center md:mt-3 md:mr-9 w-100">
+<li class="flex-column center mr-1 md:mt-3 md:mr-9 w-100">
   <a href={galleryUrl}>
     <Picture
       aspectRatio="444:620"
@@ -25,11 +25,5 @@ const finalImageUrl = directImageLink || imageUrl;
       {name}
       <span>&rarr;</span>
     </h2>
-  </a>
-  <a
-    href={`/${edition}`}
-    class="mt-1 mr-2.5 bg-gray-50 border border-gray-300 text-gray-900 rounded-lg p-1.5 dark:bg-gray-700 dark:border-gray-600 dark:text-white"
-  >
-    {edition}
   </a>
 </li>

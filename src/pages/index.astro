@@ -2,19 +2,36 @@
 import Layout from "../layouts/Layout.astro";
 import EditionSection from "../components/EditionSection.astro";
 import {
-  ALL_WISHLIST,
+  AllWhistlistInformation,
   EditionLiteral,
   parseRawPokemonCardCollection,
   PokemonCardCollection,
 } from "../type";
 
-const wishlistEntries = Object.entries(ALL_WISHLIST) as [
+const { allWishlist, hugo, paul } = AllWhistlistInformation;
+const wishlistEntries = Object.entries(allWishlist) as [
   EditionLiteral,
   PokemonCardCollection
 ][];
 ---
 
 <Layout title="Welcome to Astro.">
+  <div class="flex">
+    <section>
+      <h3>Paul</h3>
+      <p>
+        <span>Holo: {paul.holo}</span>
+        <span>Total: {paul.total}</span>
+      </p>
+    </section>
+    <section class="ml-3">
+      <h3>Hugo</h3>
+      <p>
+        <span>Holo: {hugo.holo}</span>
+        <span>Total: {hugo.total}</span>
+      </p>
+    </section>
+  </div>
   {
     wishlistEntries.map(([edition, cardCollection]) => (
       <EditionSection
