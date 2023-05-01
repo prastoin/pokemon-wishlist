@@ -48,6 +48,11 @@ export const HUGO_WHISHLIST: EditionRecord = {
       name: "PAPILUSION",
       serialNumber: 9,
     },
+    {
+      holo: true,
+      name: "MALOSSE",
+      serialNumber: 12,
+    },
   ],
   NEO3: [
     {
@@ -122,6 +127,11 @@ export const HUGO_WHISHLIST: EditionRecord = {
     {
       name: "ROIGADA",
       serialNumber: 77,
+    },
+    {
+      name: "NOCTALI",
+      holo: true,
+      serialNumber: 91,
     },
   ],
   VM1: [],
