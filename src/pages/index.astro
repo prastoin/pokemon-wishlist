@@ -9,14 +9,14 @@ import {
 } from "../type";
 
 const { allWishlist, hugo, paul } = AllWhistlistInformation;
-const wishlistEntries = Object.entries(allWishlist) as [
-  EditionLiteral,
-  PokemonCardCollection
-][];
+const wishlistEntries = Object.entries(allWishlist).sort(
+  ([_editionA, cardCollectionA], [_editionB, cardCollectionB]) =>
+    cardCollectionB.length - cardCollectionA.length
+) as [EditionLiteral, PokemonCardCollection][];
 ---
 
 <Layout title="Welcome to Astro.">
-  <div class="flex">
+  <div class="flex print:hidden">
     <section>
       <h3>Paul</h3>
       <p>

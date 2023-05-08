@@ -6,7 +6,7 @@ export interface Props {
   cardInformation: ParsedPokemonCard;
 }
 
-const { name, edition, galleryUrl, imageUrl, directImageLink } =
+const { name, galleryUrl, imageUrl, directImageLink } =
   Astro.props.cardInformation;
 const finalImageUrl = directImageLink || imageUrl;
 ---
@@ -21,7 +21,7 @@ const finalImageUrl = directImageLink || imageUrl;
       format="jpeg"
       loading="lazy"
     />
-    <h2>
+    <h2 class="print:hidden">
       {name}
       <span>&rarr;</span>
     </h2>
